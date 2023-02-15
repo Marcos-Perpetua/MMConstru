@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Poppins&display=swap');
+:root{
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-subtitulo: 'Fira Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.titulo-destaque{
+    color: coral;
+}
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+}
+.apresentacao_subtitulo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-subtitulo);
+}
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacao__links__links{
+    
+    border: 2px solid coral;
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    text-decoration: none;
+    color: coral;
+    font-family: var(--fonte-subtitulo);
+    font-weight: 600;
+}
+a:hover{
+    background-color: #272727;
+}
+.apresentacao__imagem{
+    width: 30%;
+    border-radius: 16px;
+}
+
+@media (max-width: 1200px) {
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
